@@ -8,7 +8,7 @@
     "deploy": "yarn build && yarn zip && yarn upload",
     "dev": "nodemon",
     "start": "node dist/index.js",
-    "upload": "aws lambda update-function-code --function-name ${PWD##*/} --zip-file fileb://dist.zip",
+    "upload": "aws lambda update-function-code --function-name iot-lambda --zip-file fileb://dist.zip",
     "zip": "sh scripts/zip.sh"
   },
   "devDependencies": {
